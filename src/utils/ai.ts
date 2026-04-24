@@ -101,7 +101,7 @@ export const generateSummary = async (text: string): Promise<SummaryResult> => {
   const combinedPhrases = [...new Set([...sentences, ...lines])];
 
   combinedPhrases.forEach(phrase => {
-    const lowerPhrase = phrase.toLowerCase();
+
     
     // Check Decisions
     for (const pattern of decisionPatterns) {
