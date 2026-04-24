@@ -18,7 +18,7 @@ function App() {
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    const saved = localStorage.getItem('smartNotesHistory');
+    const saved = localStorage.getItem('smartCareHistory');
     if (saved) {
       try {
         setHistory(JSON.parse(saved));
@@ -29,7 +29,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    localStorage.setItem('smartNotesHistory', JSON.stringify(history));
+    localStorage.setItem('smartCareHistory', JSON.stringify(history));
   }, [history]);
 
   const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
