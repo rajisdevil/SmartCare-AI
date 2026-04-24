@@ -124,7 +124,7 @@ function App() {
       <aside className="sidebar">
         <div className="flex-between">
           <h2 className="section-title" style={{ margin: 0 }}>
-            <BrainCircuit color="var(--accent-color)" /> Smart Notes
+            <BrainCircuit color="var(--accent-color)" /> SmartCare AI
           </h2>
         </div>
         
